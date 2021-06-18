@@ -44,6 +44,7 @@ const func1 = () => {
 const func2 = () => {
     func3();
 }
-const func2 = () => {}
+const func2 = () => {
+}
 
 func1();

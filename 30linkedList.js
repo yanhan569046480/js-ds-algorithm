@@ -123,7 +123,8 @@ var hasCycle = function (head) {
  * JS中的原型链基本用法一
  */
 const obj = {};
-const func = () => {};
+const func = () => {
+};
 const arr = [];
 
 /**
@@ -131,7 +132,8 @@ const arr = [];
  */
 const obj = {};
 Object.prototype.x = 'x';
-const func = () => {};
+const func = () => {
+};
 Function.prototype.y = 'y';
 
 /**
@@ -152,7 +154,8 @@ const instanceOf = (A, B) => {
  * 面试题
  */
 var foo = {},
-    F = function () {};
+    F = function () {
+    };
 
 Object.prototype.a = 'value a';
 Function.prototype.b = 'value b';
