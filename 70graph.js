@@ -126,7 +126,6 @@ class Node {
         this.neighbors = neighbors;
     }
 }
-
 var cloneGraph = function (node) {
     if (!node) {
         return;
