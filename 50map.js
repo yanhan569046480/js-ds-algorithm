@@ -50,12 +50,15 @@ var isValid = function (s) {
     map.set('{', '}');
     map.set('[', ']');
     for (let i = 0; i < s.length; i++) {
-        const c = s[i];
-        if (map.has(c)) {
-            stack.push(c);
+        const current = s[i];
+        if (map.has(current)) {
+            //如果当前字符是左括号，就加入栈中
+            stack.push(current);
         } else {
-            const t = stack[stack.length - 1];
-            if (map.get(t) === c) {
+            //如果当前字符是右括号，拿到栈顶字符对应的值进行比对
+            //栈顶元素,表示左括号
+            const top = stack[stack.length - 1];
+            if (map.get(top) === current) {
                 stack.pop();
             } else {
                 return false;
